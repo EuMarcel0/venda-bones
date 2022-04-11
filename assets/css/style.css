@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color:#EEE;
+    background-color:#FFF;
     font-family:'Lato',Helvetica,Arial;
     font-size:15px;
     display:flex;
@@ -61,34 +61,34 @@ main {
 h1 {
     font-family:'Hepta Slab', Helvetica, Arial;
 }
-.pizza-area {
+.bone-area {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.pizza-item {
+.bone-item {
     text-align: center;
     max-width:250px;
     font-family:'Hepta Slab', Helvetica, Arial;
     margin:0 auto 50px auto;
 }
-.pizza-item a {
+.bone-item a {
     display:flex;
     flex-direction: column;
     align-items:center;
     text-decoration: none;
 }
-.pizza-item--img {
+.bone-item--img {
     width:200px;
     height:200px;
-    background-color:#EEE;
+    background-color:#FFF;
     border-radius:100px;
-    box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2);
+    /* box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2); */
 }
-.pizza-item--img img {
+.bone-item--img img {
     width:100%;
     height:auto;
 }
-.pizza-item--add {
+.bone-item--add {
     width:50px;
     height:50px;
     line-height:50px;
@@ -101,27 +101,27 @@ h1 {
     margin-top:-25px;
     transition:all ease .2s;
 }
-.pizza-item a:hover .pizza-item--add {
+.bone-item a:hover .bone-item--add {
     background-color:#244c88;
 }
-.pizza-item--price {
+.bone-item--price {
     font-size:15px;
     color:#333;
     margin-top:5px;
 }
-.pizza-item--name {
+.bone-item--name {
     font-size:20px;
     font-weight: bold;
     color:#000;
     margin-top:5px;
 }
-.pizza-item--desc {
+.bone-item--desc {
     font-size:13px;
     color:#555;
     margin-top:10px;
 }
 
-.pizzaWindowArea {
+.boneWindowArea {
     position:fixed;
     left:0;
     top:0;
@@ -134,7 +134,9 @@ h1 {
     align-items: center;
     overflow-y:auto;
 }
-.pizzaWindowBody {
+
+
+.boneWindowBody {
     width:900px;
     background-color:#FFF;
     border-radius:10px;
@@ -142,49 +144,49 @@ h1 {
     display:flex;
     margin:20px 0px;
 }
-.pizzaBig {
+.boneBig {
     flex:1;
     display:flex;
     justify-content: center;
     align-items: center;
 }
-.pizzaBig--back {
+.boneBig--back {
     position:absolute;
     width:30px;
     height:30px;
     background-color:#000;
 }
-.pizzaBig img {
+.boneBig img {
     height:400px;
     width:auto;
 }
-.pizzaInfo {
+.boneInfo {
     flex:1;
     font-family:'Hepta Slab', Helvetica, Arial;
     padding-bottom:50px;
 }
-.pizzaInfo h1 {
+.boneInfo h1 {
     margin-top:50px;
 }
-.pizzaInfo .pizzaInfo--desc {
+.boneInfo .boneInfo--desc {
     font-size:15px;
     color:#999;
     margin-top:10px;
     font-family:'Lato',Helvetica,Arial;
 }
-.pizzaInfo--sector {
+.boneInfo--sector {
     color:#CCC;
     text-transform: uppercase;
     font-size:14px;
     margin-top:30px;
     margin-bottom:10px;
 }
-.pizzaInfo--sizes {
+.boneInfo--sizes {
     display:inline-flex;
     border-radius:10px;
     overflow:hidden;
 }
-.pizzaInfo--size {
+.boneInfo--size {
     padding:10px 15px;
     color:#000;
     background-color:#EEE;
@@ -192,36 +194,36 @@ h1 {
     font-weight: bold;
     cursor:pointer;
 }
-.pizzaInfo--size:hover {
+.boneInfo--size:hover {
     background-color:#CCC;
 }
-.pizzaInfo--size.selected {
+.boneInfo--size.selected {
     background-color:#399ade;
     color:#FFF;
 }
-.pizzaInfo--size.selected span {
+.boneInfo--size.selected span {
     color:#D6D6D6;
 }
-.pizzaInfo--size span {
+.boneInfo--size span {
     font-size:12px;
     color:#999;
     font-weight: normal;
 }
-.pizzaInfo--price {
+.boneInfo--price {
     display:flex;
     align-items:center;
 }
-.pizzaInfo--actualPrice {
+.boneInfo--actualPrice {
     font-size:28px;
     margin-right:30px;
 }
-.pizzaInfo--qtarea {
+.boneInfo--qtarea {
     display:inline-flex;
-    background-color:#EEE;
+    background-color:#FFF;
     border-radius:10px;
     height:30px;
 }
-.pizzaInfo--qtarea button {
+.boneInfo--qtarea button {
     border:0;
     background-color:transparent;
     font-size:17px;
@@ -230,14 +232,14 @@ h1 {
     padding:0px 10px;
     color:#333;
 }
-.pizzaInfo--qt {
+.boneInfo--qt {
     line-height: 30px;
     font-size: 12px;
     font-weight: bold;
     padding: 0px 5px;
     color:#000;
 }
-.pizzaInfo--addButton {
+.boneInfo--addButton {
     margin-top:30px;
     padding:20px 30px;
     border-radius:20px;
@@ -247,14 +249,14 @@ h1 {
     cursor:pointer;
     margin-right:30px;
 }
-.pizzaInfo--addButton:hover {
+.boneInfo--addButton:hover {
     background-color:#32a345;
 }
-.pizzaInfo--cancelButton {
+.boneInfo--cancelButton {
     display:inline-block;
     cursor:pointer;
 }
-.pizzaInfo--cancelMobileButton {
+.boneInfo--cancelMobileButton {
     display:none;
     height:40px;
     text-align:center;
@@ -279,7 +281,7 @@ h1 {
 }
 .cart--item--qtarea {
     display:inline-flex;
-    background-color:#EEE;
+    background-color:#FFF;
     border-radius:10px;
     height:30px;
 }
@@ -331,7 +333,7 @@ h1 {
 }
 
 @media (max-width:1000px) {
-    .pizza-area {
+    .bone-area {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -340,10 +342,10 @@ h1 {
     body {
         flex-direction: column;
     }
-    .pizza-area {
+    .bone-area {
         display:block;
     }
-    .pizza-item {
+    .bone-item {
         max-width:100%;
     }
     header {
@@ -373,12 +375,12 @@ h1 {
         display:block;
     }
 
-    .pizzaWindowArea {
+    .boneWindowArea {
         justify-content:flex-start;
         align-items: flex-start;
     }
 
-    .pizzaWindowBody {
+    .boneWindowBody {
         width:100vw;
         display:block;
         padding:20px;
@@ -387,37 +389,37 @@ h1 {
         margin:0;
     }
 
-    .pizzaBig img {
+    .boneBig img {
         width: 75%;
         height: auto;
     }
 
-    .pizzaInfo h1 {
+    .boneInfo h1 {
         margin-top:20px;
     }
 
-    .pizzaInfo--qtarea {
+    .boneInfo--qtarea {
         height:60px;
     }
-    .pizzaInfo--qtarea button {
+    .boneInfo--qtarea button {
         font-size:25px;
         padding:0px 25px;
     }
-    .pizzaInfo--qt {
+    .boneInfo--qt {
         line-height: 60px;
         font-size:20px;
     }
-    .pizzaInfo--addButton {
+    .boneInfo--addButton {
         font-size:20px;
         display:block;
         text-align:center;
         margin:30px auto;
     }
 
-    .pizzaInfo--cancelButton {
+    .boneInfo--cancelButton {
         display:none;
     }
-    .pizzaInfo--cancelMobileButton {
+    .boneInfo--cancelMobileButton {
         display:block;
     }
 }
